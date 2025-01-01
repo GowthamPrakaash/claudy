@@ -25,8 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-emerald-800 bg-opacity-10`}
       >
+        <nav className="w-full p-4 flex justify-center">
+          <h1 className="text-emerald-800 text-2xl font-bold rounded">Claudy</h1>
+        </nav>
         {children}
       </body>
     </html>
