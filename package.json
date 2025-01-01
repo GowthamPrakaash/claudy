@@ -6,7 +6,7 @@
     "flask-dev": "source src/api/venv/bin/activate && pip install -r requirements.txt && python -m flask --app src/api/index run -p 5328",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev --turbopack\" \"npm run flask-dev\"",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
   },
