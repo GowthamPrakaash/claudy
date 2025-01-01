@@ -3,9 +3,9 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   X as CloseIcon,
-  FileJsonIcon,
-  SquareChartGanttIcon,
-  ScrollTextIcon,
+  // FileJsonIcon,
+  // SquareChartGanttIcon,
+  // ScrollTextIcon,
 } from "lucide-react";
 import { useRef } from "react";
 import MarkdownIt from "markdown-it";
@@ -15,7 +15,8 @@ import "highlight.js/styles/github-dark.css"; // Choose your preferred style
 // import "highlight.js/styles/atom-one-dark.css"; // Choose your preferred style
 
 export interface ArtifactContent {
-  type: "text" | "markdown" | "code";
+  // type: "text" | "markdown" | "code";
+  type: string;
   language?: string;
   title: string;
   content: string;

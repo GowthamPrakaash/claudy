@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useParams } from "next/navigation";
 import {
@@ -151,6 +151,7 @@ export default function ConversationPage() {
     content: string,
     language?: string
   ) => {
+    // const typeValue = type as "text" | "markdown" | "code";
     return (
       <div
         key={index}
